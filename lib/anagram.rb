@@ -8,6 +8,8 @@ class Anagram
   end
   
   def match(words_array)
-    words_array.map {|word| word.sort == @word.sort}
+    anagram_word = []
+    anagram_word << words_array.map {|word| word.sort == @word.sort}
+    anagram_word
   end
 end
